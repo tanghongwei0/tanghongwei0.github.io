@@ -12,6 +12,7 @@ var swiper = new Swiper('.swiper-container', {
     navigation: {
         nextEl: '.swiper-button-next'
     },
+    //(梦想起航)动画效果
     on:{
         init: function(){
             swiperAnimateCache(this); //隐藏动画元素
