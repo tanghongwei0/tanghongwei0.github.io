@@ -44,6 +44,32 @@ body {
     transform: rotateZ(-90deg);
 }
 
+/*音乐按钮*/
+#mp3btn{
+    position: absolute;
+    right: 5%;
+    top: 5%;z-index: 100;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(105, 102, 102, 0.37);
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    border: 3px solid rgba(162, 159, 159, 0.37);
+    transform: rotateZ(0deg);
+    animation: mp3btnkey 2s linear infinite;
+}
+@keyframes mp3btnkey {
+    0%{
+    transform:rotateZ(0deg)
+    }
+    100%{
+    transform:rotateZ(360deg)
+    }
+}
+#mp3btn img{
+    width: 10px;
+}
 
 /* .s1*/
 
@@ -60,36 +86,33 @@ body {
     width: 35px;
     top: 120px;
     left: 50px;
-    animation: swing infinite;
 }
 
 .s1 .header img:nth-of-type(2){
     width: 65px;
     top: 90px;
     right: 40px;
-    animation: swing infinite;
 }
 
 .s1 .header img:nth-of-type(3){
     width: 55px;
     left: 35px;
     bottom: 180px;
-    animation: swing infinite;
 }
 .s1 .header img:nth-of-type(4){
     width: 50px;
     right: 50px;
     bottom: 210px;
-    animation: swing infinite;
 }
 .s1 .header img:nth-of-type(5){
     left: 50%;
     top: 25%;
     width: 60%;
     margin-left: -30%;
-    animation: pulse infinite;
 }
-
+.swing{
+    transform-origin:center;    /*旋转点 中心旋转*/
+}
 /*文字部分*/
 .s1 .main{
     position: absolute;
