@@ -42,6 +42,21 @@ body {
     right: auto;
     margin-left: -13.5px;
     transform: rotateZ(-90deg);
+    width: 17px;
+    height: 34px;
+    background-size: 17px 34px;
+    animation: buttonnext 1.5s infinite;
+}
+
+@keyframes buttonnext {
+    0%{
+        bottom: 3%;
+        opacity:1;
+    }
+    100%{
+        bottom: 6%;
+        opacity:0;
+    }
 }
 
 /*音乐按钮*/
@@ -69,6 +84,92 @@ body {
 }
 #mp3btn img{
     width: 10px;
+}
+
+/*footer动画*/
+.footer img:nth-of-type(1){
+    left: -90%;
+    animation: footerbg 3s alternate infinite;
+}
+.footer img:nth-of-type(2){
+    left: -90px;
+    animation: footerbg1 3s alternate infinite;
+}
+
+@keyframes footerbg {
+    0%{
+        left: -90%;
+    }
+    100%{
+        left: -70%;
+    }
+}
+@keyframes footerbg1 {
+    0%{
+        left: -90px;
+    }
+    100%{
+        left: -160px;
+    }
+}
+
+/*通用样式*/
+.top h2 {
+    padding-top: 10%;
+    font-size: 24px;
+    margin-bottom: 10%;
+}
+
+.top h2::before,
+.top h2::after {
+    content: "";
+    width: 83px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+
+.top h2::before {
+    background: url("../img/14.png");
+    background-size: cover;
+    left: 45px;
+    top: 45px;
+}
+
+.top h2::after {
+    background: url("../img/13.png");
+    background-size: cover;
+    right: 45px;
+    top: 45px;
+}
+
+.top h2 small {
+    margin-top: 10px;
+    display: block;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.s5 .main{
+    width: 80%;
+    margin: auto;
+}
+.footer{
+    color: #00d7ae;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer p{
+    height: 70px;
+}
+.footer img:nth-of-type(1){
+    position: absolute;
+    left: -90%;
+}
+.footer img:nth-of-type(2){
+    position: absolute;
+    left: -90px;
 }
 
 /* .s1*/
@@ -133,72 +234,16 @@ body {
     margin: auto;
     font-weight: bold;
 }
-.s1 .footer{
-    color: #00d7ae;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
 .s1 .footer h2{
-    margin-bottom: 15px;
     font-size: 18px;
 }
 .s1 .footer p:nth-of-type(1){
-    margin-bottom: 38px;
     font-size: 16px;
-}
-.s1 .footer p:nth-of-type(2){
-    height: 70px;
-}
-.s1 .footer img:nth-of-type(1){
-    position: absolute;
-    left: -90%;
-}
-.s1 .footer img:nth-of-type(2){
-    position: absolute;
-    left: -90px;
 }
 /*第二屏样式*/
 .s2 {
     color: #00f0c3;
 }
-
-.s2 h2 {
-    padding-top: 10%;
-    font-size: 24px;
-    margin-bottom: 10%;
-}
-
-.s2 h2::before,
-.s2 h2::after {
-    content: "";
-    width: 83px;
-    height: 20px;
-    display: inline-block;
-    position: absolute;
-}
-
-.s2 h2::before {
-    background: url("../img/14.png");
-    background-size: cover;
-    left: 45px;
-    top: 45px;
-}
-
-.s2 h2::after {
-    background: url("../img/13.png");
-    background-size: cover;
-    right: 45px;
-    top: 45px;
-}
-
-.s2 h2 small {
-    margin-top: 10px;
-    display: block;
-    font-size: 12px;
-    letter-spacing: 5px;
-}
-
 .s2 div {
 
 }
@@ -244,62 +289,9 @@ body {
     border-radius: 20px;
     font-weight: bold;
 }
-.s2 .footer{
-    color: #00d7ae;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-.s2 .footer p{
-    height: 70px;
-}
-.s2 .footer img:nth-of-type(1){
-    position: absolute;
-    left: -90%;
-}
-.s2 .footer img:nth-of-type(2){
-    position: absolute;
-    left: -90px;
-}
-
 /*第三屏*/
 .s3 {
     color: #00f0c3;
-}
-.s3 h2 {
-    padding-top: 10%;
-    font-size: 24px;
-    margin-bottom: 10%;
-}
-
-.s3 h2::before,
-.s3 h2::after {
-    content: "";
-    width: 83px;
-    height: 20px;
-    display: inline-block;
-    position: absolute;
-}
-
-.s3 h2::before {
-    background: url("../img/14.png");
-    background-size: cover;
-    left: 45px;
-    top: 45px;
-}
-
-.s3 h2::after {
-    background: url("../img/13.png");
-    background-size: cover;
-    right: 45px;
-    top: 45px;
-}
-
-.s3 h2 small {
-    margin-top: 10px;
-    display: block;
-    font-size: 12px;
-    letter-spacing: 5px;
 }
 .s3 .main div:nth-of-type(1){
     width: 132px;
@@ -372,89 +364,157 @@ body {
     right: 26%;
     background: radial-gradient(#000f2a, #026175); /* 渐变 */
 }
-.s3 .footer{
-    color: #00d7ae;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-.s3 .footer p:nth-of-type(1){
+.s3 .footer span{
     width: 80%;
     font-size: 16px;
+    border-left: 3px solid #00f0c3;
     display: inline-block;
-    border-left: 2px solid #03f1d1;
-    margin-bottom: 50px;
-}
-.s3 .footer p:nth-of-type(2){
-    height: 70px;
-}
-.s3 .footer img:nth-of-type(1){
-    position: absolute;
-    left: -90%;
-}
-.s3 .footer img:nth-of-type(2){
-    position: absolute;
-    left: -90px;
+    margin-bottom: 30px;
 }
 /*第四屏*/
 
 .s4 {
     color: #00f0c3;
 }
-.s4 h2 {
-    padding-top: 10%;
-    font-size: 24px;
-    margin-bottom: 10%;
-}
-
-.s4 h2::before,
-.s4 h2::after {
-    content: "";
-    width: 83px;
-    height: 20px;
-    display: inline-block;
-    position: absolute;
-}
-
-.s4 h2::before {
-    background: url("../img/14.png");
-    background-size: cover;
-    left: 45px;
-    top: 45px;
-}
-
-.s4 h2::after {
-    background: url("../img/13.png");
-    background-size: cover;
-    right: 45px;
-    top: 45px;
-}
-
-.s4 h2 small {
-    margin-top: 10px;
-    display: block;
-    font-size: 12px;
-    letter-spacing: 5px;
-}
-
 .s4 .main img {
     width: 80%;
 }
+.s4 .main {
+    position: relative;
+}
 
-.s4 .footer{
-    color: #00d7ae;
+.s4 .text {
     position: absolute;
-    bottom: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 5%;
+    font-size: 16px;
 }
-.s4 .footer p{
-    height: 70px;
+.s4 .qq{
+    text-align: center;
+    margin-bottom: 20px;
 }
-.s4 .footer img:nth-of-type(1){
-    position: absolute;
-    left: -90%;
+.s4 .qq span:nth-of-type(1){
+    margin-right: 30px;
 }
-.s4 .footer img:nth-of-type(2){
-    position: absolute;
-    left: -90px;
+.s4 .text1 span{
+    line-height: 16px;
+    margin-left: 5px;
 }
+.s4 .text1 p:nth-of-type(1) span{
+    color: white;
+}
+.s4 .text1 p:nth-of-type(1){
+    margin-bottom: 5px;
+}
+.s4 .text1 p:nth-of-type(2){
+    width: 75%;
+    height: 15px;
+    background: linear-gradient(to left, #27fbaf, #000525);
+    float: left;
+}
+.s4 .text1 p:nth-of-type(3){
+    width: 40%;
+    height: 15px;
+    background: linear-gradient(to left, #07bef7, #000525);
+    float: left;
+}
+.s4 .text2 span{
+    line-height: 16px;
+    margin-left: 5px;
+}
+.s4 .text2 p:nth-of-type(1) span{
+    color: white;
+}
+.s4 .text2 p:nth-of-type(1){
+    margin-bottom: 5px;
+}
+.s4 .text2 p:nth-of-type(2){
+    width: 75%;
+    height: 15px;
+    background: linear-gradient(to left, #27fbaf, #000525);
+    float: left;
+}
+.s4 .text2 p:nth-of-type(3){
+    width: 30%;
+    height: 15px;
+    background: linear-gradient(to left, #07bef7, #000525);
+    float: left;
+}
+.s4 .text3 span{
+    line-height: 16px;
+    margin-left: 5px;
+}
+.s4 .text3 p:nth-of-type(1) span{
+    color: white;
+}
+.s4 .text3 p:nth-of-type(1){
+    margin-bottom: 5px;
+}
+.s4 .text3 p:nth-of-type(2){
+    width: 75%;
+    height: 15px;
+    background: linear-gradient(to left, #27fbaf, #000525);
+    float: left;
+}
+.s4 .text3 p:nth-of-type(3){
+    width: 20%;
+    height: 15px;
+    background: linear-gradient(to left, #07bef7, #000525);
+    float: left;
+}
+.s4 .text1 span:nth-of-type(2){
+    color: #00e7f7;
+}
+.s4 .text2 span:nth-of-type(2){
+    color: #00e7f7;
+}
+.s4 .text3 span:nth-of-type(2){
+    color: #00e7f7;
+}
+.s4 .main div{
+    margin-bottom: 20px;
+}
+.s4 .s4p{
+    font-size: 12px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*第五屏*/
+.s5 {
+    color: #00f0c3;
+}
+.s5 .main div{
+    width: 140px;
+    height: 178px;
+    background: url("../img/12.png");
+    background-size: cover;
+    float: left;
+    margin: 5px 5px 30px 5px;
+    padding-top: 20px;
+    font-size: 13px;
+}
+.s5 .main div p:nth-of-type(1){
+    margin-bottom: 5px;
+}
+.s5 .main div p:nth-of-type(2){
+    width: 100px;
+    height: 22px;
+    background: linear-gradient(to left, #01fc9b, #00e7f9);
+    border-radius: 20px;
+    margin: auto;
+    color: #000;
+    line-height: 22px;
+}
+
+/*第六屏*/
+.s6 {
+    color: #00f0c3;
+}
+
+
