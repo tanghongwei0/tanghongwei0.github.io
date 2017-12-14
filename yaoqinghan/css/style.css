@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+}
+
+/*自定义样式  - 开始*/
+
+/*向下翻页的按钮*/
+.swiper-button-next {
+    position: absolute;
+    top: auto;
+    bottom: 5%;
+    left: 50%;
+    right: auto;
+    margin-left: -13.5px;
+    transform: rotateZ(-90deg);
+    width: 17px;
+    height: 34px;
+    background-size: 17px 34px;
+    animation: buttonnext 1.5s infinite;
+}
+
+@keyframes buttonnext {
+    0%{
+        bottom: 3%;
+        opacity:1;
+    }
+    100%{
+        bottom: 6%;
+        opacity:0;
+    }
+}
+
+/*音乐按钮*/
+#mp3btn{
+    position: absolute;
+    right: 5%;
+    top: 5%;z-index: 100;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(105, 102, 102, 0.37);
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    border: 3px solid rgba(162, 159, 159, 0.37);
+    transform: rotateZ(0deg);
+    animation: mp3btnkey 2s linear infinite;
+}
+@keyframes mp3btnkey {
+    0%{
+        transform:rotateZ(0deg)
+    }
+    100%{
+        transform:rotateZ(360deg)
+    }
+}
+#mp3btn img{
+    width: 10px;
+}
+
+/*通用样式*/
+.top h1 {
+    padding-top: 10%;
+    margin-bottom: 10%;
+}
+
+.top h1::before,
+.top h1::after {
+    content: "";
+    width: 63px;
+    height: 36px;
+    display: inline-block;
+    position: absolute;
+}
+
+.top h1::before {
+    background: url("../img/2.png");
+    background-size: cover;
+    left: 45px;
+    top: 45px;
+}
+
+.top h1::after {
+    background: url("../img/3.png");
+    background-size: cover;
+    right: 45px;
+    top: 45px;
+}
+
+.s1,.s2,.s3,.s4,.s5{
+    background: url("../img/bj.jpg");
+    height: 100%;
+    background-size: cover;
+}
+
+
+/*第一屏*/
+.s1{
+    color: rgb(195, 154, 102);
+}
+.s1 .top{
+    margin-bottom: 100px;
+}
+.s1 .main{
+    position: relative;
+    margin-bottom: 100px;
+}
+.s1 .main img{
+    width: 80%;
+}
+.s1 .main div{
+    position: absolute;
+    top:-15px;
+    left: 95px;
+}
+.s1 .main h2:nth-of-type(1){
+    margin-bottom: 25px;
+}
+.s1 .main h2:nth-of-type(2){
+    font-weight: 100;
+}
+.s1 .main h1:nth-of-type(2){
+    font-size: 60px;
+    font-family: 华文行楷;
+}
+
+/*第二屏*/
+.s2{
+    color: rgb(195, 154, 102);
+}
+.s2 .main{
+    position: relative;
+}
+
+
+
+
