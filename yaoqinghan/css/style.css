@@ -139,7 +139,9 @@ body {
 .s1 .main div{
     position: absolute;
     top:-15px;
-    left: 95px;
+    left: 50%;
+    width:200px;
+    margin-left: -100px;
 }
 .s1 .main h2:nth-of-type(1){
     margin-bottom: 25px;
