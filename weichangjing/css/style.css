@@ -516,5 +516,134 @@ body {
 .s6 {
     color: #00f0c3;
 }
+.s6 .main{
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    border-left: 2px dashed #0deec6;
+    padding-left: 20px;
+    position: relative;
+}
+.s6 .main span{
+    background: url("../img/p-bj_03.png");
+    width: 230px;
+    height: 25px;
+    background-size: cover;
+    display: inline-block;
+    padding-left: 10px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.s6 .main div:nth-of-type(1){
+    width: 100%;
+    height: 80px;
+    background: radial-gradient(#040926, #02364e);
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 15px;
+    line-height: 20px;
+    border: 1px solid #024454;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.s6 .main div:nth-of-type(2){
+    width: 100%;
+    height: 80px;
+    background: radial-gradient(#040926, #02364e);
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 15px;
+    line-height: 20px;
+    border: 1px solid #024454;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.s6 .main div:nth-of-type(3){
+    width: 100%;
+    height: 80px;
+    background: radial-gradient(#040926, #02364e);
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 15px;
+    line-height: 20px;
+    border: 1px solid #024454;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.s6 .main img{
+    width: 26px;
+    height: 26px;
+}
+.s6 .main img:nth-of-type(1){
+    position: absolute;
+    top: 0;
+    left: -15px;
+}
+.s6 .main img:nth-of-type(2){
+    position: absolute;
+    top: 34%;
+    left: -15px;
+}
+.s6 .main img:nth-of-type(3){
+    position: absolute;
+    top: 68%;
+    left: -15px;
+}
 
-
+/*第七屏*/
+.s7 {
+    color: #00f0c3;
+}
+.s7 .main{
+    position: relative;
+}
+.s7 .main img{
+    width: 80%;
+}
+.s7 .main .text{
+    position: absolute;
+    top:40px;
+    left: 0;
+}
+.s7 .main .text input{
+    width: 240px;
+    height: 50px;
+    margin-bottom: 10px;
+    border: 2px solid #00f7c1;
+    padding-left: 20px;
+}
+.s7 .main .text button{
+    width: 240px;
+    height: 50px;
+    background-color: #00f2ca;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.s7 .main .text p{
+    font-size: 15px;
+    width: 60%;
+    margin: auto;
+}
+.s7 .text label:nth-of-type(1){
+    position: absolute;
+    top: 20px;
+    left: 20%;
+    color: red;
+}
+.s7 .text label:nth-of-type(2){
+    position: absolute;
+    top: 27%;
+    left: 20%;
+    color: red;
+}
+.s7 .text label:nth-of-type(3){
+    position: absolute;
+    top: 47%;
+    left: 20%;
+    color: red;
+}
