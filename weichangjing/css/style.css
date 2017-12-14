@@ -629,21 +629,3 @@ body {
     width: 60%;
     margin: auto;
 }
-.s7 .text label:nth-of-type(1){
-    position: absolute;
-    top: 20px;
-    left: 20%;
-    color: red;
-}
-.s7 .text label:nth-of-type(2){
-    position: absolute;
-    top: 27%;
-    left: 20%;
-    color: red;
-}
-.s7 .text label:nth-of-type(3){
-    position: absolute;
-    top: 47%;
-    left: 20%;
-    color: red;
-}
