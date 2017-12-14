@@ -131,7 +131,7 @@ body {
 }
 .s1 .main{
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 .s1 .main img{
     width: 80%;
@@ -158,8 +158,121 @@ body {
 }
 .s2 .main{
     position: relative;
+    height:52%;
+}
+.s2 .main div:nth-of-type(1){
+    width: 220px;
+    height: 150px;
+    border: 2px solid rgb(195, 154, 102);
+    position: absolute;
+    top:0;
+    left: 25px;
+}
+.s2 .main div:nth-of-type(2){
+    width: 200px;
+    height: 136px;
+    border: 2px solid rgb(195, 154, 102);
+    position: absolute;
+    top:88px;
+    right: 25px;
+}
+.s2 .main div:nth-of-type(3){
+    width: 200px;
+    height: 136px;
+    border: 2px solid rgb(195, 154, 102);
+    position: absolute;
+    top:185px;
+    left: 25px;
+}
+.s2 .main div:nth-of-type(4){
+    width: 220px;
+    height: 150px;
+    background: #000;
+    position: absolute;
+    top: 25px;
+    left: 50px;
+}
+.s2 .main div:nth-of-type(5){
+    width: 200px;
+    height: 136px;
+    background: #000;
+    position: absolute;
+    top:113px;
+    right: 20px;
+}
+.s2 .main div:nth-of-type(6){
+    width: 200px;
+    height: 136px;
+    background: #000;
+    position: absolute;
+    top:210px;
+    left: 50px;
+}
+.s2 .main img:nth-of-type(1){
+    position: absolute;
+    top:10px;
+    left: 35px;
+}
+.s2 .main img:nth-of-type(2){
+    position: absolute;
+    top:98px;
+    right: 35px;
+    width: 200px;
+    height: 136px;
+}
+.s2 .main img:nth-of-type(3){
+    position: absolute;
+    top:198px;
+    left: 35px;
+    width: 200px;
+    height: 136px;
+}
+.s2 .footer p{
+    font-size: 16px;
+    width: 90%;
+    margin: auto;
+    text-align: left;
 }
 
+/*第三屏*/
+.s3{
+    color: rgb(195, 154, 102);
+}
+.s3 .top{
+    margin-bottom: 60px;
+}
+.s3 .main{
+    width:80%;
+    margin: auto;
+    position: relative;
+}
+.s3 .left{
+    margin-left: -140px;
+    margin-bottom: 10px;
+}
+.s3 .right{
+    margin-left: 104px;
+    margin-bottom: 10px;
+}
+.s3 .rights{
+    margin-left: 45px;
+    margin-bottom: 10px;
+}
+.s3 .rightq{
+    margin-left: 62px;
+    margin-bottom: 10px;
+}
+.s3 .rightw{
+    margin-left: 26px;
+    margin-bottom: 10px;
+}
+.s3 .main div{
+    border-right: 1px solid rgba(195, 154, 102, 0.37);
+    height: 375px;
+    position: absolute;
+    top:12px;
+    left: 142px;
+}
 
 
 
