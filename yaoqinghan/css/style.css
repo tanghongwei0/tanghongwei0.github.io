@@ -116,7 +116,7 @@ body {
     top: 45px;
 }
 
-.s1,.s2,.s3,.s4,.s5{
+.s1,.s2,.s3,.s4,.s5,.s6{
     background: url("../img/bj.jpg");
     height: 100%;
     background-size: cover;
@@ -128,6 +128,7 @@ body {
     color: rgb(195, 154, 102);
 }
 .s1 .top{
+    padding-top: 20px;
     margin-bottom: 100px;
 }
 .s1 .main{
@@ -158,14 +159,17 @@ body {
 .s2{
     color: rgb(195, 154, 102);
 }
+.s2 .top{
+    margin-bottom: 30px;
+}
 .s2 .main{
     position: relative;
-    height:62vh;
+    height:56vh;
 }
 .s2 .main div:nth-of-type(1){
     width: 220px;
     height: 150px;
-    border: 2px solid rgb(195, 154, 102);
+    border: 1px solid rgb(195, 154, 102);
     position: absolute;
     top:0;
     left: 25px;
@@ -173,7 +177,7 @@ body {
 .s2 .main div:nth-of-type(2){
     width: 200px;
     height: 136px;
-    border: 2px solid rgb(195, 154, 102);
+    border: 1px solid rgb(195, 154, 102);
     position: absolute;
     top:88px;
     right: 25px;
@@ -181,7 +185,7 @@ body {
 .s2 .main div:nth-of-type(3){
     width: 200px;
     height: 136px;
-    border: 2px solid rgb(195, 154, 102);
+    border: 1px solid rgb(195, 154, 102);
     position: absolute;
     top:185px;
     left: 25px;
@@ -276,6 +280,89 @@ body {
     left: 50%;
     margin-left: -8px;
 }
-
+/*第四屏*/
+.s4{
+    color: rgb(195, 154, 102);
+}
+.s4 .top{
+    margin-bottom: 50px;
+}
+.s4 .main{
+    width: 90%;
+    height: 70vh;
+    border: 1px solid;
+    margin: auto;
+    padding-top: 15px;
+}
+.s4 .main img{
+    width: 80%;
+    height:65vh;
+}
+/*第五屏*/
+.s5{
+    color: rgb(195, 154, 102);
+}
+.s5 .top{
+    margin-bottom: 50px;
+}
+.s5 .main{
+    width: 90%;
+    height: 70vh;
+    border: 1px solid;
+    margin: auto;
+    padding-top: 15px;
+}
+.s5 .main img{
+    width: 80%;
+    height:65vh;
+}
+/*第六屏*/
+.s6{
+    color: rgb(195, 154, 102);
+}
+.s6 .header {
+    margin-bottom: 50px;
+}
+.s6 .header img{
+    width:40%;
+    position: relative;
+}
+.s6 .header h1{
+    position: absolute;
+    top:45px;
+    left: 50%;
+    margin-left: -68px;
+}
+.s6 .main{
+    position: relative;
+}
+.s6 .main img{
+    width: 80%;
+}
+.s6 .main .text{
+    position: absolute;
+    top:40px;
+    left: 0;
+}
+.s6 .main .text input{
+    width: 240px;
+    height: 50px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+.s6 .main .text button{
+    width: 240px;
+    height: 50px;
+    background-color: rgb(195, 154, 102);
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.s6 .main .text p{
+    font-size: 18px;
+    width: 65%;
+    margin: auto;
+}
 
 
