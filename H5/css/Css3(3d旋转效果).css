@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*使宽度不受内边距和边框影响*/
+}
+.comsic-cube{
+    background-color: #000;
+    height:100vh;
+    display: flex;      /*弹性布局*/
+    align-items: center;    /*上下居中*/
+    justify-content: center;    /*左右居中*/
+}
+.comsic-cube .cube{
+    position: relative;
+    width:80px;
+    height:80px;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);     /*旋转*/
+    animation: cube 5s infinite linear;    /*动画效果的对象*/    /* infinite 无限执行*/   /* linear 动画从头到尾的速度是相同的。*/
+    transform-style: preserve-3d;       /*子元素保留其3d位置*/
+}
+.comsic-cube .cube div{
+    text-align: center;
+    font-size: 60px;
+    line-height: 80px;
+    color: yellow;
+    width:80px;
+    height:80px;
+    border: 3px solid yellow;
+    box-shadow: 0 0 80px yellow; /*阴影*/
+    position: absolute;
+    border-radius: 20px;
+}
+.comsic-cube .cube div:nth-of-type(1){          /*div:nth-of-type(1) :  选择6个div中的第一个*/
+    transform: translateY(-40px) rotateX(90deg);
+}
+.comsic-cube .cube div:nth-of-type(2){
+    transform: translateY(40px) rotateX(90deg);
+}
+.comsic-cube .cube div:nth-of-type(3){
+    transform: translateX(40px) rotateY(90deg);
+}
+.comsic-cube .cube div:nth-of-type(4){
+    transform: translateX(-40px) rotateY(90deg);
+}
+.comsic-cube .cube div:nth-of-type(5){
+    transform: translateZ(40px);
+}
+.comsic-cube .cube div:nth-of-type(6){
+    transform: translateZ(-40px);
+}
+@keyframes cube {           /* @keyframes 动画效果*/
+    100%{
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+.comsic-cube .comsic{
+    background: url("../images/circle.jpg");
+    width:700px;
+    height:548px;
+    display: flex;      /*弹性布局*/
+    align-items: center;    /*上下居中*/
+    justify-content: center;    /*左右居中*/
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>手表_手表推荐 - 国美</title>
+    <meta name="description" content="商品列表页">
+    <meta name="keywords" content="国美,国美官网,国美电器,国美电器官方网站">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- CSS -->
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="list">
+
+<div id="app">
+    <div class="header">
+        <a href="index.html"><i class="fa fa-angle-left"></i></a>
+        <input type="text" placeholder="国美31周年庆 神卷立抢">
+    </div>
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <a class="active">综合<img src="img/zonghe.png" alt=""></a>
+                </div>
+                <div class="col-xs-3">
+                    <a>价格<img src="img/jiage.png" alt=""></a>
+                </div>
+                <div class="col-xs-3">
+                    <a>销量</a>
+                </div>
+                <div class="col-xs-3">
+                    <a>筛选</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="list_div" v-for="list1 in list_img">
+                    <a href="shop.html">
+                        <div class="col-xs-4">
+                            <img :src="list1.Img_list" alt="">
+                        </div>
+                        <div class="col-xs-8">
+                            <h5>{{list1.tit_list}}</h5>
+                            <p>{{list1.money_list}}</p>
+                            <span>{{list1.ping_list}}</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/Swiper/4.0.7/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/vue/2.5.9/vue.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

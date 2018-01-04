@@ -1,146 +1,217 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>jQuery九宫格图片布局点击弹出文字详情代码</title>
+    <title>我的仓库</title>
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <script src="js/jquery.min.js"></script>
 
-    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <style>
 
+        .more-pens {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            z-index: 10;
+            font-family: "Montserrat";
+            font-size: 12px;
+        }
+
+        a.white-mode, a.white-mode:link, a.white-mode:visited, a.white-mode:active {
+            font-family: "Montserrat";
+            font-size: 12px;
+            text-decoration: none;
+            background: #212121;
+            padding: 4px 8px;
+            color: #f7f7f7;
+        }
+
+        a.white-mode:hover, a.white-mode:link:hover, a.white-mode:visited:hover, a.white-mode:active:hover {
+            background: #edf3f8;
+            color: #212121;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            background: #000000;
+        }
+
+        .title {
+            z-index: 10;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-family: "Montserrat";
+            text-align: center;
+            width: 100%;
+        }
+
+        .title h1 {
+            position: relative;
+            color: #EEEEEE;
+            font-weight: 600;
+            font-size: 60px;
+            padding: 0;
+            margin: 0;
+            line-height: 1;
+            text-shadow: 0 0 30px #000155;
+        }
+
+        .title h1 span {
+            font-weight: 600;
+            padding: 0;
+            margin: 0;
+            color: #BBB;
+        }
+
+        .title h3 {
+            font-weight: 200;
+            font-size: 20px;
+            padding: 0;
+            margin: 0;
+            line-height: 1;
+            color: #EEEEEE;
+            letter-spacing: 2px;
+            text-shadow: 0 0 30px #000155;
+        }
+    </style>
 </head>
 <body>
 
-<div class="background-lyrics">
-    秘密——吸引力法则：这个秘密可以让你得到你想要的一切，包括快乐健康财富。你能拥有一切，达到你的目标，变成你想成为的人。我们可以拥有一切我们想拥有的东西，无论什么都能得到。你想住在什么样的房子里？你想当个百万富翁吗？你想拥有什么样的事业呢？你希望自己更成功吗？你究竟想要什么？我看到奇迹发生在许多人的生命里，比如财富上，绝症康复，精神康复，以及两性关系转变的奇迹。奇迹之所以出现，是因为他们知道怎么运用我们即将公布的秘密。这是生命中伟大的秘密。这个秘密就是过去、现在和未来一切的答案。我们都具有无穷的力量，我们都被同样的定律引导着，宇宙的自然定律真的是精确无比，因此我们建造宇宙飞船没有任何问题，还可以送人上月球，甚至可以预估登陆时间，精确度在1/10秒之内，不管你是在印度还是在澳洲，纽西兰，斯德哥尔摩，伦敦，多伦多，蒙特娄还是纽约，我们都依循着一种力量，一种定律，就是吸引力。这个秘密就是吸引力定律。你生命里发生的一切，都是由你吸引而来的...
-</div>
-<div class="container-master">
-    <div class="container-tile">
-        <h1>九宫格切图点击加载内容列表</h1>
-        <div class="content">
-            <div class="floaty tile">
-                <h3 class="title">微场景</h3>
-                <div class="lines"></div>
-                <ul>
-                    <li><img src="img/weichangjing.png" alt=""></li>
-                </ul>
-            </div>
-            <div class="floaty tile">
-                <h3 class="title">吸引力法则</h3>
-                <div class="lines"></div>
-                <ul>
-                    <li>这个秘密可以让你得到你想要的一切，包括快乐健康财富。</li>
-                    <li>你能拥有一切，达到你的目标，变成你想成为的人。</li>
-                    <li>我们可以拥有一切我们想拥有的东西，无论什么都能得到。</li>
-                    <li>你想住在什么样的房子里？</li>
-                    <li>你想当个百万富翁吗？</li>
-                    <li>你想拥有什么样的事业呢？</li>
-                    <li>你希望自己更成功吗？你究竟想要什么？</li>
-                </ul>
-            </div>
-            <div class="floaty tile">
-                <h3 class="title">健康</h3>
-                <div class="lines"></div>
-                <ul>
-                    <li>这个秘密可以让你得到你想要的一切，包括快乐健康财富。</li>
-                    <li>你能拥有一切，达到你的目标，变成你想成为的人。</li>
-                    <li>我们可以拥有一切我们想拥有的东西，无论什么都能得到。</li>
-                    <li>你想住在什么样的房子里？</li>
-                    <li>你想当个百万富翁吗？</li>
-                    <li>你想拥有什么样的事业呢？</li>
-                    <li>你希望自己更成功吗？你究竟想要什么？</li>
-                </ul>
-            </div>
-            <div class="floaty tile">
-                <h3 class="title">快乐</h3>
-                <div class="lines"></div>
-                <ul>
-                    <li>这个秘密可以让你得到你想要的一切，包括快乐健康财富。</li>
-                    <li>你能拥有一切，达到你的目标，变成你想成为的人。</li>
-                    <li>我们可以拥有一切我们想拥有的东西，无论什么都能得到。</li>
-                    <li>你想住在什么样的房子里？</li>
-                    <li>你想当个百万富翁吗？</li>
-                    <li>你想拥有什么样的事业呢？</li>
-                    <li>你希望自己更成功吗？你究竟想要什么？</li>
-                </ul>
-            </div>
-            <div class="floaty tile">
-                <h3 class="title">财富</h3>
-                <div class="lines"></div>
-                <ul>
-                    <li>这个秘密可以让你得到你想要的一切，包括快乐健康财富。</li>
-                    <li>你能拥有一切，达到你的目标，变成你想成为的人。</li>
-                    <li>我们可以拥有一切我们想拥有的东西，无论什么都能得到。</li>
-                    <li>你想住在什么样的房子里？</li>
-                    <li>你想当个百万富翁吗？</li>
-                    <li>你想拥有什么样的事业呢？</li>
-                    <li>你希望自己更成功吗？你究竟想要什么？</li>
-                </ul>
-            </div>
-            <div class="floaty tile">
-                <h3 class="title">自由</h3>
-                <div class="lines"></div>
-                <ul>
-                    <li>这个秘密可以让你得到你想要的一切，包括快乐健康财富。</li>
-                    <li>你能拥有一切，达到你的目标，变成你想成为的人。</li>
-                    <li>我们可以拥有一切我们想拥有的东西，无论什么都能得到。</li>
-                    <li>你想住在什么样的房子里？</li>
-                    <li>你想当个百万富翁吗？</li>
-                    <li>你想拥有什么样的事业呢？</li>
-                    <li>你希望自己更成功吗？你究竟想要什么？</li>
-                </ul>
-            </div>
-            <div class="floaty tile">
-                <h3 class="title">幸福</h3>
-                <div class="lines"></div>
-                <ul>
-                    <li>这个秘密可以让你得到你想要的一切，包括快乐健康财富。</li>
-                    <li>你能拥有一切，达到你的目标，变成你想成为的人。</li>
-                    <li>我们可以拥有一切我们想拥有的东西，无论什么都能得到。</li>
-                    <li>你想住在什么样的房子里？</li>
-                    <li>你想当个百万富翁吗？</li>
-                    <li>你想拥有什么样的事业呢？</li>
-                    <li>你希望自己更成功吗？你究竟想要什么？</li>
-                </ul>
-            </div>
-            <div class="floaty tile">
-                <h3 class="title">感恩</h3>
-                <div class="lines"></div>
-                <ul>
-                    <li>这个秘密可以让你得到你想要的一切，包括快乐健康财富。</li>
-                    <li>你能拥有一切，达到你的目标，变成你想成为的人。</li>
-                    <li>我们可以拥有一切我们想拥有的东西，无论什么都能得到。</li>
-                    <li>你想住在什么样的房子里？</li>
-                    <li>你想当个百万富翁吗？</li>
-                    <li>你想拥有什么样的事业呢？</li>
-                    <li>你希望自己更成功吗？你究竟想要什么？</li>
-                </ul>
-            </div>
-            <div class="floaty tile">
-                <h3 class="title">充满爱</h3>
-                <div class="lines"></div>
-                <ul>
-                    <li>这个秘密可以让你得到你想要的一切，包括快乐健康财富。</li>
-                    <li>你能拥有一切，达到你的目标，变成你想成为的人。</li>
-                    <li>我们可以拥有一切我们想拥有的东西，无论什么都能得到。</li>
-                    <li>你想住在什么样的房子里？</li>
-                    <li>你想当个百万富翁吗？</li>
-                    <li>你想拥有什么样的事业呢？</li>
-                    <li>你希望自己更成功吗？你究竟想要什么？</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container-lyrics">
-        <div class="content">
-            <div class="header">
-                <a class="back"></a>
-                <h4 class="lyrics-title"></h4></div>
-            <div class="lyrics-wrapper"></div>
-        </div>
-    </div>
-</div>
+<div class="title">
+    <div class="sucaihuo-container">
+        <section class="cd-section">
+            <a class="cd-bouncy-nav-trigger" href="#0">我的仓库</a>
+        </section>
 
-<script type="text/javascript" src='js/jquery.min.js'></script>
-<script type="text/javascript" src="js/index.js"></script>
+        <div class="cd-bouncy-nav-modal">
+            <nav>
+                <ul class="cd-bouncy-nav">
+                    <li><a href="JQ/index.html">JQ购物车</a></li>
+                    <li><a href="Vue/index.html">Vue购物车</a></li>
+                    <li><a href="H5/index.html">Html5网站</a></li>
+                    <li><a href="weichangjing/index.html">微场景</a></li>
+                    <li><a href="yaoqinghan/index.html">邀请函</a></li>
+                    <li><a href="W3guomei/index.html">电商网站(国美)</a></li>
+                </ul>
+            </nav>
+            <a href="#0" class="cd-close">Close modal</a>
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script>
+    'use strict';
+
+    function _classCallCheck(instance, Constructor) {
+        if (!(instance instanceof Constructor)) {
+            throw new TypeError("Cannot call a class as a function");
+        }
+    }
+
+    var max_particles = 1000;
+
+    var tela = document.createElement('canvas');
+    tela.width = $(window).width();
+    tela.height = $(window).height();
+    $("body").append(tela);
+
+    var canvas = tela.getContext('2d');
+
+    var Particle = function () {
+        function Particle(canvas, progress) {
+            _classCallCheck(this, Particle);
+
+            var random = Math.random();
+            this.progress = 0;
+            this.canvas = canvas;
+
+            this.x = $(window).width() / 2 + (Math.random() * 200 - Math.random() * 200);
+            this.y = $(window).height() / 2 + (Math.random() * 200 - Math.random() * 200);
+
+            this.w = $(window).width();
+            this.h = $(window).height();
+            this.radius = random > .2 ? Math.random() * 1 : Math.random() * 3;
+            this.color = random > .2 ? "#d8002c" : "#F9314C";
+            this.radius = random > .8 ? Math.random() * 2 : this.radius;
+            this.color = random > .8 ? "#7DFFF2" : this.color;
+
+            // this.color  = random > .1 ? "#ffae00" : "#f0ff00" // Alien
+            this.variantx1 = Math.random() * 300;
+            this.variantx2 = Math.random() * 400;
+            this.varianty1 = Math.random() * 100;
+            this.varianty2 = Math.random() * 120;
+        }
+
+        Particle.prototype.render = function render() {
+            this.canvas.beginPath();
+            this.canvas.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+            this.canvas.lineWidth = 2;
+            this.canvas.fillStyle = this.color;
+            this.canvas.fill();
+            this.canvas.closePath();
+        };
+
+        Particle.prototype.move = function move() {
+            // this.x += (Math.sin(this.progress/this.variantx1)*Math.cos(this.progress/this.variantx2));
+            // this.y += (Math.sin(this.progress/this.varianty1)*Math.cos(this.progress/this.varianty2));
+            this.x += Math.sin(this.progress / this.variantx1) * Math.cos(this.progress / this.variantx2);
+            this.y += Math.cos(this.progress / this.varianty2);
+
+            if (this.x < 0 || this.x > this.w - this.radius) {
+                return false;
+            }
+
+            if (this.y < 0 || this.y > this.h - this.radius) {
+                return false;
+            }
+            this.render();
+            this.progress++;
+            return true;
+        };
+
+        return Particle;
+    }();
+
+    var particles = [];
+    var init_num = popolate(max_particles);
+
+    function popolate(num) {
+        for (var i = 0; i < num; i++) {
+            setTimeout(function () {
+                particles.push(new Particle(canvas, i));
+            }.bind(this), i * 20);
+        }
+        return particles.length;
+    }
+
+    function clear() {
+        canvas.globalAlpha = 0.05;
+        canvas.fillStyle = '#000';
+        canvas.fillRect(0, 0, tela.width, tela.height);
+        canvas.globalAlpha = 1;
+    }
+
+    function update() {
+        particles = particles.filter(function (p) {
+            return p.move();
+        });
+        if (particles.length < init_num) {
+            popolate(1);
+        }
+        clear();
+        requestAnimationFrame(update.bind(this));
+    }
+    update();
+</script>
+
 </body>
 </html>
+

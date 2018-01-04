@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>国美触屏版</title>
+    <meta name="description"
+          content="国美(gome.com.cn)国美电器唯一官方网上商城，中国领先的专业家电网购平台。全球品牌电视、洗衣机、电脑、手机、数码、空调、电脑配件、生活电器、网络产品等正品行货，更低价格，更快送达，为您提供便捷、诚信的服务。有国美，生活美！">
+    <meta name="keywords"
+          content="国美,国美官网,国美电器,国美电器官方网站,国美电器网上商城,国美商城,国美网上商城,gome,电视,洗衣机,电脑,手机,数码,空调,电脑配件,生活电器,家电,电器">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- CSS -->
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body class="home">
+
+<div id="app">
+    <div class="navbar-fixed-top">
+        <div class="header">
+            <a href="index.html"><img src="favicon.ico" alt=""></a>
+            <input type="text" placeholder="国美31周年庆 神卷立抢">
+            <a href="">登录</a>
+            <a href="" class="gou"><img src="img/grass_cart.png" alt=""></a>
+        </div>
+    </div>
+    <div class="lunbo">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="list.html"><img src="img/1.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="list.html"><img src="img/2.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="list.html"><img src="img/3.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="list.html"><img src="img/4.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="list.html"><img src="img/5.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="list.html"><img src="img/6.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="list.html"><img src="img/7.jpg" alt=""></a></div>
+                <div class="swiper-slide"><a href="list.html"><img src="img/8.jpg" alt=""></a></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+        </div>
+    </div>
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="nav">
+                    <div class="col-xs-3" v-for="list in lists">
+                        <a :href="list.url">
+                            <img :src="list.img" :alt="list.tit">
+                            <p>{{list.tit}}</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="shengdan" v-for="img2 in img1"><img :src="img2.imgq" alt=""></p>
+    </div>
+    <div class="main">
+        <div class="zhuti">
+            <div class="zhuti_top">
+                <img src="img/zhuti.png" alt="">
+            </div>
+            <div class="zhuti_main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6" v-for="zhutiimg in zhuti"><a href=""><img :src="zhutiimg.zhuti1" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jiadian">
+            <div class="jiadian_top">
+                <img src="img/jiadian.png" alt="">
+            </div>
+            <div class="jiadian_main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6" v-for="jiadianimg in jiadian"><a href=""><img :src="jiadianimg.jiadian1" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pinzhi">
+            <div class="pinzhi_top">
+                <img src="img/pingzhi.png" alt="">
+            </div>
+            <div class="pinzhi_main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6" v-for="pinzhiimg in pinzhi"><a href=""><img :src="pinzhiimg.pinzhi1" alt=""></a></div>
+                        <div class="col-xs-3" v-for="pinzhiimg1 in pinzhi2"><a :href="pinzhiimg1.lian"><img :src="pinzhiimg1.pinzhi3" alt=""></a></div>
+                        <div class="col-xs-6" v-for="pinzhiimg2 in pinzhi4"><a href=""><img :src="pinzhiimg2.pinzhi5" alt=""></a></div>
+                        <div class="col-xs-3" v-for="pinzhiimg3 in pinzhi6"><a href=""><img :src="pinzhiimg3.pinzhi7" alt=""></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="maylike">
+        <div class="maylike_top">
+            <h4>
+                <i class="fa fa-arrow-circle-o-up"></i>
+                你可能喜欢
+            </h4>
+        </div>
+        <div class="maylike_main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6" v-for="imgaa in mylike">
+                        <a href="shop.html">
+                        <img :src="imgaa.imgzz" alt="">
+                        <p>{{imgaa.jianjie}}</p>
+                        <span>{{imgaa.money}}</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="img/footer.png" alt="">
+        <div class="footer_top">
+            <a href="">登录</a>
+            <a href="">注册</a>
+            <a href="">更多</a>
+            <a href="">反馈</a>
+        </div>
+        <div class="footer_main">
+            <p>copyright ©  2000-2017 gome.com.cn</p>
+            <p>客服热线：<a href="tel:4008-708-708">4008-708-708</a></p>
+        </div>
+        <div class="footer_bottom">
+            <a href="index.html">
+                <img src="img/footer1.png" alt="">
+                <p>首页</p>
+            </a>
+            <a href="list.html">
+                <img src="img/footer2.png" alt="">
+                <p>分类</p>
+            </a>
+            <a href="">
+                <img src="img/footer3.png" alt="">
+                <p>优选</p>
+            </a>
+            <a href="">
+                <img src="img/footer4.png" alt="">
+                <p>购物车</p>
+            </a>
+            <a href="">
+                <img src="img/footer5.png" alt="">
+                <p>我的</p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript -->
+<script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/Swiper/4.0.7/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/vue/2.5.9/vue.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
