@@ -171,13 +171,3 @@ $(function(){
         $(this).eq(a).parent().siblings().children().removeClass("active");
     })
 });
-$(function(){
-    $("#num_sort").change(function(){
-        var n=$(this).val();
-        $(".pro_price strong").text(200*n);
-    });
-    $(".rating li i").click(function(){
-        var c=$(this).parent().attr("class");
-        $(this).parent().parent().attr("class","rating "+c+"star")
-    })
-});

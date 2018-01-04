@@ -553,55 +553,46 @@
       .footer_right {
         float: left;
         width: 80px;
-        .rating{
-          overflow:hidden;
-          width:80px;
-          height:16px;
-          margin:6px 0 0 5px;
-          padding:0;
-          list-style:none;
-          clear:both;
-          position:relative;
-          background: url(../img/star-matrix.gif) no-repeat 0 0;
+        .xing1{
+          width: 100%;
+          display: block;
+          height: 1.2rem;
+          background: url(../img/xing.png) repeat-x;
+          background-size: 16px 16px;
+          margin: 6px 0 0 5px;
         }
-        .nostar {background-position:0 0}
-        .onestar {background-position:0 -16px}
-        .twostar {background-position:0 -32px}
-        .threestar {background-position:0 -48px}
-        .fourstar {background-position:0 -64px}
-        .fivestar {background-position:0 -80px}
-        ul.rating li {
-          cursor: pointer;
-          float:left;
-          text-indent:-999em;
+        .xing2{
+          width: 80%;
+          display: block;
+          height: 1.2rem;
+          background: url(../img/xing.png) repeat-x;
+          background-size: 16px 16px;
+          margin: 6px 0 0 5px;
         }
-        ul.rating li i {
-          position:absolute;
-          left:0;
-          top:0;
-          width:16px;
-          height:16px;
-          text-decoration:none;
-          z-index: 200;
+        .xing3{
+          width: 60%;
+          display: block;
+          height: 1.2rem;
+          background: url(../img/xing.png) repeat-x;
+          background-size: 16px 16px;
+          margin: 6px 0 0 5px;
         }
-        ul.rating li.one i {left:0}
-        ul.rating li.two i {left:16px;}
-        ul.rating li.three i {left:32px;}
-        ul.rating li.four i {left:48px;}
-        ul.rating li.five i {left:64px;}
-        ul.rating li i:hover {
-          z-index:2;
-          width:80px;
-          height:16px;
-          overflow:hidden;
-          left:0;
-          background: url(../img/star-matrix.gif) no-repeat 0 0
+        .xing4{
+          width: 40%;
+          display: block;
+          height: 1.2rem;
+          background: url(../img/xing.png) repeat-x;
+          background-size: 16px 16px;
+          margin: 6px 0 0 5px;
         }
-        ul.rating li.one i:hover {background-position:0 -96px;}
-        ul.rating li.two i:hover {background-position:0 -112px;}
-        ul.rating li.three i:hover {background-position:0 -128px}
-        ul.rating li.four i:hover {background-position:0 -144px}
-        ul.rating li.five i:hover {background-position:0 -160px}
+        .xing5{
+          width: 20%;
+          display: block;
+          height: 1.2rem;
+          background: url(../img/xing.png) repeat-x;
+          background-size: 16px 16px;
+          margin: 6px 0 0 5px;
+        }
       }
     }
     .footer_nav {

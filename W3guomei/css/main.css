@@ -446,67 +446,41 @@
     .shop .footer .footer_main .footer_right {
       float: left;
       width: 80px; }
-      .shop .footer .footer_main .footer_right .rating {
-        overflow: hidden;
-        width: 80px;
-        height: 16px;
-        margin: 6px 0 0 5px;
-        padding: 0;
-        list-style: none;
-        clear: both;
-        position: relative;
-        background: url(../img/star-matrix.gif) no-repeat 0 0; }
-      .shop .footer .footer_main .footer_right .nostar {
-        background-position: 0 0; }
-      .shop .footer .footer_main .footer_right .onestar {
-        background-position: 0 -16px; }
-      .shop .footer .footer_main .footer_right .twostar {
-        background-position: 0 -32px; }
-      .shop .footer .footer_main .footer_right .threestar {
-        background-position: 0 -48px; }
-      .shop .footer .footer_main .footer_right .fourstar {
-        background-position: 0 -64px; }
-      .shop .footer .footer_main .footer_right .fivestar {
-        background-position: 0 -80px; }
-      .shop .footer .footer_main .footer_right ul.rating li {
-        cursor: pointer;
-        float: left;
-        text-indent: -999em; }
-      .shop .footer .footer_main .footer_right ul.rating li i {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 16px;
-        height: 16px;
-        text-decoration: none;
-        z-index: 200; }
-      .shop .footer .footer_main .footer_right ul.rating li.one i {
-        left: 0; }
-      .shop .footer .footer_main .footer_right ul.rating li.two i {
-        left: 16px; }
-      .shop .footer .footer_main .footer_right ul.rating li.three i {
-        left: 32px; }
-      .shop .footer .footer_main .footer_right ul.rating li.four i {
-        left: 48px; }
-      .shop .footer .footer_main .footer_right ul.rating li.five i {
-        left: 64px; }
-      .shop .footer .footer_main .footer_right ul.rating li i:hover {
-        z-index: 2;
-        width: 80px;
-        height: 16px;
-        overflow: hidden;
-        left: 0;
-        background: url(../img/star-matrix.gif) no-repeat 0 0; }
-      .shop .footer .footer_main .footer_right ul.rating li.one i:hover {
-        background-position: 0 -96px; }
-      .shop .footer .footer_main .footer_right ul.rating li.two i:hover {
-        background-position: 0 -112px; }
-      .shop .footer .footer_main .footer_right ul.rating li.three i:hover {
-        background-position: 0 -128px; }
-      .shop .footer .footer_main .footer_right ul.rating li.four i:hover {
-        background-position: 0 -144px; }
-      .shop .footer .footer_main .footer_right ul.rating li.five i:hover {
-        background-position: 0 -160px; }
+      .shop .footer .footer_main .footer_right .xing1 {
+        width: 100%;
+        display: block;
+        height: 1.2rem;
+        background: url(../img/xing.png) repeat-x;
+        background-size: 16px 16px;
+        margin: 6px 0 0 5px; }
+      .shop .footer .footer_main .footer_right .xing2 {
+        width: 80%;
+        display: block;
+        height: 1.2rem;
+        background: url(../img/xing.png) repeat-x;
+        background-size: 16px 16px;
+        margin: 6px 0 0 5px; }
+      .shop .footer .footer_main .footer_right .xing3 {
+        width: 60%;
+        display: block;
+        height: 1.2rem;
+        background: url(../img/xing.png) repeat-x;
+        background-size: 16px 16px;
+        margin: 6px 0 0 5px; }
+      .shop .footer .footer_main .footer_right .xing4 {
+        width: 40%;
+        display: block;
+        height: 1.2rem;
+        background: url(../img/xing.png) repeat-x;
+        background-size: 16px 16px;
+        margin: 6px 0 0 5px; }
+      .shop .footer .footer_main .footer_right .xing5 {
+        width: 20%;
+        display: block;
+        height: 1.2rem;
+        background: url(../img/xing.png) repeat-x;
+        background-size: 16px 16px;
+        margin: 6px 0 0 5px; }
   .shop .footer .footer_nav {
     border-bottom: 1px solid #eaeaea; }
     .shop .footer .footer_nav p:nth-of-type(1) {
